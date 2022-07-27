@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, authOperations } from '../../redux/auth';
 import defaultAvatar from './Avatar.png';
+import s from './UserMenu.module.css'
 
 const styles = {
   container: {
@@ -25,7 +26,7 @@ export default function UserMenu() {
     <div style={styles.container}>
       <img src={avatar} alt="" width="32" style={styles.avatar} />
       <span style={styles.name}>Welcome, {name}</span>
-      <button type="button" onClick={() => dispatch(authOperations.logOut())}>
+      <button type="button" className={s.button} onClick={() => dispatch(authOperations.logOut())}>
         Sign Out
       </button>
     </div>

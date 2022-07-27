@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../redux/auth';
+import s from './View.module.css'
 
 const styles = {
   form: {
@@ -63,7 +64,7 @@ export default function LoginView() {
           />
         </label>
 
-        <button type="submit">Sign In</button>
+        <button type="submit" className={s.button}>Sign In</button>
       </form>
     </div>
   );

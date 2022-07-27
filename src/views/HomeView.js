@@ -7,8 +7,9 @@ const styles = {
     },
     title: {
       fontWeight: 500,
-      fontSize: 48,
+      fontSize: 50,
       textAlign: 'center',
+      color: 'skyblue'
     },
   };
   

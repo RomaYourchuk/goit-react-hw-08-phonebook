@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../redux/auth';
+import s from './View.module.css'
 
 const styles = {
   form: {
@@ -72,7 +73,7 @@ export default function RegisterView() {
           />
         </label>
 
-        <button type="submit">Register</button>
+        <button type="submit" className={s.button}>Register</button>
       </form>
     </div>
   );
